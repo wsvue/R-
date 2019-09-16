@@ -1,0 +1,24 @@
+7.2 Gra[joca; Rara,etes
+	There are awide ragne of  graphical parameters that can be supplied as arguments to the 'plot' function
+	(or other plotting functions, such as those in Section 7.3).These parametes invoke simple visual enhancemnts,like
+	coloring the ponts and adding axis laes, and can also control technical aspects of the graphics device(Chaper23 covers, the latter in more detail).
+	Some of the most commonly used graphical parameters are listed hers; I"ll briefly discuss each of these in turn in the following secions:
+	
+	'type'  Telss R how to plot the supplied coordinates (for examples,as stand-alne points or joined by lines or both dots and lines).
+	'main, xlab, ylab' Options to include plot title, the horizontal azis label, and the veritcal axis label, respectively.
+	'col' Color(or colors) to use for plotting ponts and lines.
+	'pch' Stands for 'point character'.These selcts which character to use for plotting individual points.
+	'cex' Stands for 'character expansion'. This controls the size of plotted point charactes.
+	'lty' Stands for 'line type.' .This specifies the type of line to use to connect the points(for example, solid, dotted, or dashed).
+	'lwd' Stands for 'line widht.'. This controls the thicknessof plotted lines.
+	'xlim, ylim' This provides limits for the horizontal ragne and vertical range(respectively) of the plotting region.
+	
+7.2.1 Automatic Plot Types
+	By default, the 'plot' function will plot individual points, as shown in Figure 7-1. This is the default plot type, but other plot types will have a differnt
+	appearnace. To control the plot type, you can specify a single charactervalued option for the argument type.
+	
+	For example, in many cases it mkes sense to show lines connection each coordinate, such as when plotting time series data. For this, you would specify plot type"l".
+	Using 'foo' and 'bar' from Section 7.1, the following produces the plot in the left panel of Figure 7.2:
+	
+	R>plot(foo, bar), type="l")
+	
